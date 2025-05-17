@@ -106,6 +106,11 @@ function sendCollectedOrders() {
     });
 }
 
+// Fiyat formatla
+function formatPrice(price) {
+    return Number(price).toFixed(2).replace(/\./g, ',');
+}
+
 // Ürünleri görüntüle
 function displayProducts(productsToShow) {
     const container = document.getElementById('productContainer');
@@ -147,7 +152,12 @@ function displayProducts(productsToShow) {
             // Stok durumu kontrolü
             const isOutOfStock = product.stok === "0" || product.stok === 0;
             const stockWarning = isOutOfStock ? 
-                '<div class="stock-warning">Tedarik süreci 2 haftaya kadar çıkabilmektedir</div>' : '';
+                '<div class="stock-warning">Stok sıfır ürünlerin tedarik süreci 2 haftaya kadar çıkabilmektedir</div>' : '';
+            
+            // Yeni ürün kontrolü
+            const isNewProduct = product.isNew === 1;
+            const newBadge = isNewProduct ? 
+                '<div class="new-badge"><span>Yeni</span></div>' : '';
             
             // HTML özel karakterleri için escape işlemi
             const escapedTitle = product.ad
@@ -158,7 +168,8 @@ function displayProducts(productsToShow) {
                 .replace(/'/g, '&#039;');
             
             productCol.innerHTML = `
-                <div class="card product-card h-100 shadow-sm">
+                <div class="card product-card h-100 shadow-sm ${isNewProduct ? 'new-product' : ''}">
+                    ${newBadge}
                     <div class="card-img-wrapper">
                         <img src="images/${product.gorsel}" class="card-img-top" alt="${escapedTitle}" 
                              onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
@@ -174,7 +185,7 @@ function displayProducts(productsToShow) {
                         </p>
                         <div class="mt-auto">
                             <p class="card-text mb-2">
-                                <strong class="text-primary h5">${product.fiyat} ${product.para_birimi}</strong>
+                                <strong class="text-primary h5">${formatPrice(product.fiyat)} ₺</strong>
                             </p>
                             <div class="quantity-input mb-2">
                                 <div class="input-group input-group-sm">
@@ -185,17 +196,21 @@ function displayProducts(productsToShow) {
                                            onfocus="handleQuantityFocus(this)"
                                            oninput="validateQuantityInput(this)"
                                            onchange="updateOrderBasket('${product.kod}', this.value)">
-                                    <button class="btn btn-outline-secondary" type="button" 
+                                    <button class="btn btn-outline-secondary" type="button"
                                             onclick="updateCardQuantity('${product.kod}', 'increase')">+</button>
                                 </div>
                             </div>
+                            <button class="btn btn-outline-primary btn-sm w-100" 
+                                    onclick="showProductDetails('${product.kod}')">
+                                <i class="fas fa-info-circle"></i> Ürün Detayı
+                            </button>
                         </div>
                     </div>
                 </div>
             `;
             brandRow.appendChild(productCol);
         });
-
+        
         container.appendChild(brandRow);
     });
 }
@@ -248,70 +263,86 @@ function showProductDetails(urunKodu) {
 
     const modal = new bootstrap.Modal(document.getElementById('productModal'));
     document.querySelector('#productModal .modal-title').textContent = product.ad;
-    document.getElementById('modalImage').src = `images/${product.gorsel}`;
-    document.getElementById('modalImage').onerror = function() {
-        this.src = 'https://via.placeholder.com/300x200?text=Ürün+Görseli';
+    
+    // Görsel kısmını güncelle
+    const modalImage = document.getElementById('modalImage');
+    modalImage.src = `images/${product.gorsel}`;
+    modalImage.alt = product.ad;
+    modalImage.onerror = function() {
+        this.src = 'https://via.placeholder.com/400x400?text=Ürün+Görseli';
     };
     
     const details = document.getElementById('modalDetails');
     details.innerHTML = `
-        <h4 class="mb-3">${product.ad}</h4>
-        <div class="product-details">
-            <div class="detail-item">
-                <span class="label">Marka:</span>
-                <span class="value">${product.marka}</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Kategori:</span>
-                <span class="value">${product.kategori}</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Stok:</span>
-                <span class="value">${product.stok} ${product.birim}</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Ürün Kodu:</span>
-                <span class="value">${product.kod}</span>
-            </div>
-            <div class="detail-item">
-                <span class="label">Barkod:</span>
-                <span class="value">${product.barkod}</span>
-            </div>
-        </div>
-        <p class="product-description mt-3">${product.aciklama || ''}</p>
-        <div class="order-section mt-4">
-            <div class="price-tag mb-3">
-                <span class="price">${product.fiyat}</span>
-                <span class="currency">${product.para_birimi}</span>
-            </div>
-            <div class="quantity-input mb-3">
-                <label for="quantity" class="form-label">Sipariş Miktarı:</label>
-                <div class="input-group">
-                    <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('decrease')">-</button>
-                    <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="${product.stok}">
-                    <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('increase')">+</button>
+        <div class="product-info">
+            <h4 class="product-title mb-3">${product.ad}</h4>
+            <div class="product-details">
+                <div class="detail-item">
+                    <span class="label">Marka:</span>
+                    <span class="value">${product.marka || '-'}</span>
                 </div>
-                <small class="text-muted">Maksimum sipariş: ${product.stok} ${product.birim}</small>
+                <div class="detail-item">
+                    <span class="label">Kategori:</span>
+                    <span class="value">${product.kategori || '-'}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Stok:</span>
+                    <span class="value">${product.stok} ${product.birim}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Ürün Kodu:</span>
+                    <span class="value">${product.kod}</span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Barkod:</span>
+                    <span class="value">${product.barkod}</span>
+                </div>
+            </div>
+            
+            ${product.aciklama ? `
+                <div class="product-description mt-3">
+                    <h5 class="description-title">Ürün Açıklaması</h5>
+                    <p>${product.aciklama}</p>
+                </div>
+            ` : ''}
+
+            <div class="order-section mt-4">
+                <div class="price-tag mb-3">
+                    <span class="price">${formatPrice(product.fiyat)}</span>
+                    <span class="currency">₺</span>
+                </div>
+                
+                <div class="quantity-control">
+                    <label for="modalQuantity" class="form-label">Sipariş Miktarı:</label>
+                    <div class="input-group">
+                        <button class="btn btn-outline-secondary" type="button" 
+                                onclick="updateModalQuantity('decrease')">
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" class="form-control text-center" 
+                               id="modalQuantity" value="1" min="1" 
+                               max="${product.stok}"
+                               onchange="validateModalQuantity(this)">
+                        <button class="btn btn-outline-secondary" type="button" 
+                                onclick="updateModalQuantity('increase')">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                    ${parseInt(product.stok) === 0 ? 
+                        '<div class="stock-warning mt-2">Stok sıfır ürünlerin tedarik süreci 2 haftaya kadar çıkabilmektedir</div>' :
+                        `<small class="text-muted mt-2 d-block">Maksimum sipariş: ${product.stok} ${product.birim}</small>`
+                    }
+                </div>
             </div>
         </div>
     `;
 
-    // WhatsApp butonunu güncelle
-    const whatsappBtn = document.getElementById('whatsappButton');
-    whatsappBtn.onclick = function() {
-        const quantity = document.getElementById('quantity').value;
-        const message = encodeURIComponent(
-            `Merhaba, ${product.ad} (Ürün Kodu: ${product.kod}) ürününden ${quantity} ${product.birim} sipariş vermek istiyorum.`
-        );
-        window.open(`https://wa.me/905XXXXXXXXX?text=${message}`, '_blank');
-    };
-
     modal.show();
 }
 
-// Miktar güncelleme fonksiyonu
-function updateQuantity(action) {
-    const input = document.getElementById('quantity');
+// Modal içindeki miktar kontrolü
+function updateModalQuantity(action) {
+    const input = document.getElementById('modalQuantity');
     let value = parseInt(input.value);
     const max = parseInt(input.max);
     
@@ -319,6 +350,20 @@ function updateQuantity(action) {
         input.value = value + 1;
     } else if (action === 'decrease' && value > 1) {
         input.value = value - 1;
+    }
+    
+    validateModalQuantity(input);
+}
+
+// Modal miktar doğrulama
+function validateModalQuantity(input) {
+    let value = parseInt(input.value);
+    const max = parseInt(input.max);
+    
+    if (isNaN(value) || value < 1) {
+        input.value = 1;
+    } else if (value > max) {
+        input.value = max;
     }
 }
 

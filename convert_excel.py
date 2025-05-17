@@ -23,6 +23,10 @@ def convert_excel_to_json():
             
             # 1.0, TRUE, EVET, 1 değerlerini kabul et
             if aktif_mi in ['1.0', '1', 'TRUE', 'EVET', 'YES']:
+                # Yeni mi değerini kontrol et
+                yeni_mi = str(row['yeni mi']).strip()
+                is_new = 1 if yeni_mi in ['1', '1.0', 'TRUE', 'EVET', 'YES'] else 0
+                
                 product = {
                     'kod': str(row['Kart kodu']),
                     'ad': str(row['Adı']),
@@ -34,10 +38,11 @@ def convert_excel_to_json():
                     'barkod': str(row['Barkod']),
                     'aciklama': str(row['açıklama']),
                     'gorsel': str(row['görsel']),
-                    'kategori': str(row['Stok grup'])
+                    'kategori': str(row['Stok grup']),
+                    'isNew': is_new  # Yeni ürün bilgisini ekle
                 }
                 products.append(product)
-                print(f"Ürün eklendi: {product['kod']} - {product['ad']}")
+                print(f"Ürün eklendi: {product['kod']} - {product['ad']} (Yeni: {'Evet' if is_new else 'Hayır'})")
             else:
                 print(f"Bu ürün aktif değil, atlanıyor.")
         

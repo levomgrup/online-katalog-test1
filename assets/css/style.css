@@ -1,11 +1,30 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #34495e;
-    --accent-color: #3498db;
-    --light-gray: #f8f9fa;
-    --dark-gray: #343a40;
-    --success-color: #25d366;
-    --success-dark: #128c7e;
+    /* Ana Renkler */
+    --primary-color: #1a237e;     /* Koyu Mavi - Ana Renk */
+    --secondary-color: #283593;   /* Orta Mavi - İkincil Renk */
+    --accent-color: #3949ab;      /* Açık Mavi - Vurgu Rengi */
+    
+    /* Nötr Renkler */
+    --light-gray: #f5f7fa;        /* Açık Gri - Arka Plan */
+    --dark-gray: #2c3e50;         /* Koyu Gri - Metin */
+    
+    /* Başarı Renkleri */
+    --success-color: #2ecc71;     /* Yeşil - Başarı */
+    --success-dark: #27ae60;      /* Koyu Yeşil */
+    
+    /* Uyarı Renkleri */
+    --warning-color: #e67e22;     /* Turuncu - Uyarı */
+    --danger-color: #e74c3c;      /* Kırmızı - Tehlike */
+    
+    /* Metin Renkleri */
+    --text-primary: #2c3e50;      /* Ana Metin */
+    --text-secondary: #34495e;    /* İkincil Metin */
+    --text-light: #7f8c8d;        /* Açık Metin */
+    
+    /* Özel Renkler */
+    --price-bg: #3949ab;          /* Fiyat Arka Plan */
+    --price-text: #ffffff;        /* Fiyat Metin */
+    --hover-color: #1e88e5;       /* Hover Efekti */
 }
 
 body {
@@ -52,6 +71,7 @@ body {
     position: absolute;
     top: 1rem;
     right: 1rem;
+    z-index: 2;
 }
 
 .brand-badge .badge {
@@ -63,7 +83,7 @@ body {
 .card-title {
     font-size: 0.9rem;
     font-weight: 600;
-    color: var(--primary-color);
+    color: var(--text-primary);
     margin-bottom: 0.5rem;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -75,12 +95,12 @@ body {
 }
 
 .text-primary {
-    color: #3498db !important;
+    color: var(--primary-color) !important;
 }
 
 .navbar {
     background-color: white !important;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
     padding: 1rem 0;
 }
 
@@ -99,13 +119,15 @@ body {
 
 .brand-subtitle {
     font-size: 0.9rem;
-    color: var(--secondary-color);
+    color: var(--text-secondary);
     font-weight: 400;
 }
 
+/* Search Input Styles */
 .search-wrapper {
     position: relative;
     max-width: 300px;
+    width: 100%;
 }
 
 .search-icon {
@@ -114,18 +136,27 @@ body {
     top: 50%;
     transform: translateY(-50%);
     color: #6c757d;
+    z-index: 2;
+    pointer-events: none;
 }
 
 #searchInput {
-    padding-left: 35px;
+    padding: 0.5rem 1rem 0.5rem 35px;
     border-radius: 20px;
     border: 1px solid #dee2e6;
     transition: all 0.3s ease;
+    width: 100%;
 }
 
 #searchInput:focus {
     box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
     border-color: var(--accent-color);
+    outline: none;
+}
+
+#searchInput::placeholder {
+    color: #6c757d;
+    opacity: 0.8;
 }
 
 #brandFilter {
@@ -155,18 +186,51 @@ body {
     color: white;
 }
 
+/* Modal Styles */
 .modal-content {
     border: none;
     border-radius: 1rem;
+    overflow: hidden;
 }
 
 .modal-header {
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #edf2f7;
     padding: 1.5rem;
+    background-color: var(--light-gray);
 }
 
 .modal-body {
     padding: 1.5rem;
+}
+
+.modal-body .col-md-6:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f9fa;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    min-height: 400px;
+}
+
+#modalImage {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.product-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
 }
 
 .product-details {
@@ -178,9 +242,10 @@ body {
 
 .detail-item {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 0.75rem;
-    border-bottom: 1px solid #e0e0e0;
     padding-bottom: 0.75rem;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 .detail-item:last-child {
@@ -191,115 +256,125 @@ body {
 
 .detail-item .label {
     font-weight: 600;
-    color: #666;
-    width: 120px;
+    color: var(--text-secondary);
 }
 
 .detail-item .value {
-    color: #2c3e50;
+    color: var(--text-primary);
+    font-weight: 500;
 }
 
-.product-description {
-    color: #666;
+.description-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+}
+
+.product-description p {
+    color: var(--text-light);
     line-height: 1.6;
+    margin-bottom: 0;
 }
 
 .price-tag {
-    background-color: #3498db;
-    color: white;
-    padding: 1rem;
+    background-color: var(--price-bg);
+    color: var(--price-text);
+    padding: 1rem 1.5rem;
     border-radius: 0.5rem;
     display: inline-block;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.price-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
 }
 
 .price-tag .price {
     font-size: 1.5rem;
     font-weight: 600;
     margin-right: 0.5rem;
+    color: var(--price-text);
 }
 
 .price-tag .currency {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--price-text);
 }
 
-.quantity-input .input-group {
-    margin: 0 auto;
-    border-radius: 20px;
-    overflow: hidden;
+.quantity-control {
+    margin-top: 1.5rem;
 }
 
-.quantity-input input {
-    text-align: center;
-    border: 1px solid #dee2e6;
-    border-left: none;
-    border-right: none;
-    background-color: white;
+.quantity-control .input-group {
+    max-width: 200px;
 }
 
-.quantity-input .btn {
-    width: 35px;
+.quantity-control .form-label {
+    font-weight: 500;
+    color: var(--text-primary);
+}
+
+.quantity-control .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--light-gray);
-    border: 1px solid #dee2e6;
-    color: var(--dark-gray);
+    background-color: #f8f9fa;
+    border-color: #dee2e6;
 }
 
-#whatsappButton {
-    background-color: #25d366;
-    border-color: #25d366;
-    border-radius: 0.5rem;
-    padding: 0.75rem 1.5rem;
-    font-weight: 600;
-    transition: all 0.2s;
+.quantity-control .btn:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
 }
 
-#whatsappButton:hover {
-    background-color: #128c7e;
-    border-color: #128c7e;
-    transform: translateY(-2px);
+.quantity-control input {
+    height: 40px;
+    text-align: center;
+    font-weight: 500;
+    border-left: none;
+    border-right: none;
+}
+
+.quantity-control input:focus {
+    box-shadow: none;
+    border-color: #dee2e6;
+}
+
+.stock-warning {
+    color: var(--danger-color);
+    font-size: 0.9rem;
+    font-style: italic;
 }
 
 @media (max-width: 768px) {
-    .hero-section {
-        padding: 3rem 0;
+    .modal-body .col-md-6:first-child {
+        min-height: 300px;
+        margin-bottom: 1.5rem;
     }
 
-    .hero-title {
-        font-size: 2rem;
+    #modalImage {
+        max-height: 300px;
     }
 
-    .hero-subtitle {
-        font-size: 1rem;
+    .product-title {
+        font-size: 1.3rem;
     }
 
-    .fixed-order-button {
-        bottom: 15px;
-        width: 90%;
-        max-width: 400px;
-        padding: 10px;
-    }
-
-    .fixed-order-button .btn {
+    .price-tag {
         width: 100%;
-        padding: 10px 20px;
+        text-align: center;
     }
 
-    [data-tooltip]:hover::before {
-        max-width: 250px;
-        font-size: 0.8rem;
-        padding: 6px 10px;
-    }
-
-    .navbar-brand {
-        margin-right: 0;
-    }
-
-    .search-wrapper {
-        width: 100%;
-        max-width: none;
-        margin-top: 1rem;
+    .quantity-control .input-group {
+        max-width: 100%;
     }
 }
 
@@ -448,14 +523,6 @@ body {
     color: var(--success-color) !important;
 }
 
-/* Stock Warning */
-.stock-warning {
-    color: #dc3545;
-    font-size: 0.8rem;
-    margin-top: 5px;
-    font-style: italic;
-}
-
 /* Tooltip styles */
 [data-tooltip] {
     position: relative;
@@ -522,7 +589,241 @@ body {
 }
 
 .filter-title {
-    color: var(--primary-color);
+    color: var(--text-primary);
     font-weight: 600;
     margin-bottom: 1rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.btn-outline-primary {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+/* Card Styles */
+.product-card {
+    border-color: var(--light-gray);
+}
+
+.card-title {
+    color: var(--text-primary);
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-muted {
+    color: var(--text-light) !important;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: white !important;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.brand-text {
+    color: var(--primary-color);
+}
+
+.brand-subtitle {
+    color: var(--text-secondary);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
+
+/* Stock Warning */
+.stock-warning {
+    color: var(--danger-color);
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: var(--light-gray);
+    border-bottom-color: #edf2f7;
+}
+
+.product-title {
+    color: var(--text-primary);
+}
+
+.detail-item .label {
+    color: var(--text-secondary);
+}
+
+.detail-item .value {
+    color: var(--text-primary);
+}
+
+.product-description {
+    color: var(--text-light);
+}
+
+/* Quantity Control */
+.quantity-control .btn:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: white;
+}
+
+/* Fixed Order Button */
+.fixed-order-button .btn {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.fixed-order-button .btn:hover {
+    background-color: var(--success-dark);
+    border-color: var(--success-dark);
+}
+
+.fixed-order-button .order-count {
+    color: var(--success-color) !important;
+}
+
+/* New Product Styles */
+.new-product {
+    position: relative;
+    background: #fff;
+    border: 2px solid var(--accent-color);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Yeni etiketi */
+.new-badge {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: var(--accent-color);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+/* Görsel konteynır */
+.new-product .card-img-wrapper {
+    position: relative;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+/* Görsel hover efekti */
+.new-product .card-img-top {
+    transition: transform 0.3s ease;
+}
+
+.new-product:hover .card-img-top {
+    transform: scale(1.03);
+}
+
+/* Hover durumunda kart efekti */
+.new-product:hover {
+    box-shadow: 0 4px 12px rgba(57, 73, 171, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Kart gövdesi */
+.new-product .card-body {
+    padding: 1rem;
+    border: none;
+}
+
+/* Marka rozeti */
+.new-product .brand-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    z-index: 2;
+}
+
+.new-product .brand-badge .badge {
+    background: white;
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+    font-weight: 500;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+}
+
+/* Fiyat etiketi */
+.new-product .price-tag {
+    color: var(--accent-color);
+    font-weight: 600;
+}
+
+/* Stok durumu için özel stil */
+.new-product .stock-warning {
+    font-size: 0.8rem;
+    color: var(--warning-color);
+    padding: 0.5rem;
+    background: rgba(230, 126, 34, 0.1);
+    border-radius: 4px;
+    margin-top: 0.5rem;
+}
+
+/* Ürün başlığı için özel stil */
+.new-product .card-title {
+    color: var(--text-primary);
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.new-product:hover .card-title {
+    color: var(--accent-color);
+}
+
+/* Buton stilleri */
+.new-product .btn-outline-primary {
+    border-width: 1.5px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+
+.new-product .btn-outline-primary:hover {
+    background: var(--accent-color);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
+}
+
+/* Miktar kontrolü için özel stil */
+.new-product .quantity-input {
+    border: 1px solid rgba(57, 73, 171, 0.2);
+    border-radius: 4px;
+    padding: 0.25rem;
+    transition: border-color 0.3s ease;
+}
+
+.new-product:hover .quantity-input {
+    border-color: var(--accent-color);
 } 

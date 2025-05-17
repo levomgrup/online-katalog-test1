@@ -10,7 +10,8 @@
     "barkod": "8683011978777",
     "aciklama": "",
     "gorsel": "ham_cicek_bali_vitamin_b6_850g_1742498705.jpg",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10017",
@@ -23,7 +24,8 @@
     "barkod": "8683011978098",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10018",
@@ -36,7 +38,8 @@
     "barkod": "8683011978081",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10028",
@@ -49,7 +52,8 @@
     "barkod": "8683011978715",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 1
   },
   {
     "kod": "ST-10032",
@@ -62,7 +66,8 @@
     "barkod": "8683011978789",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10061",
@@ -75,7 +80,8 @@
     "barkod": "8690508601759",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Konserve"
+    "kategori": "Konserve",
+    "isNew": 0
   },
   {
     "kod": "ST-10063",
@@ -88,7 +94,8 @@
     "barkod": "8697409141827",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10065",
@@ -101,7 +108,8 @@
     "barkod": "8697409141605",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10064",
@@ -114,7 +122,8 @@
     "barkod": "8697409141186",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10067",
@@ -127,7 +136,8 @@
     "barkod": "8697409142237",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10753",
@@ -140,7 +150,8 @@
     "barkod": "8697409140196",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 1
   },
   {
     "kod": "ST-10070",
@@ -153,7 +164,8 @@
     "barkod": "KIRMA",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 1
   },
   {
     "kod": "STK-00000072",
@@ -166,7 +178,8 @@
     "barkod": "",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 1
   },
   {
     "kod": "STK-00000071",
@@ -179,7 +192,8 @@
     "barkod": "8699409715251",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "STK-00000069",
@@ -192,7 +206,8 @@
     "barkod": "8699409714421",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "STK-00000070",
@@ -205,7 +220,8 @@
     "barkod": "8699409715503",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10076",
@@ -218,7 +234,8 @@
     "barkod": "8697666763497",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kuruyemiş"
+    "kategori": "kuruyemiş",
+    "isNew": 0
   },
   {
     "kod": "ST-10077",
@@ -231,7 +248,8 @@
     "barkod": "8697666769406",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10078",
@@ -244,7 +262,8 @@
     "barkod": "8697666769390",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10079",
@@ -257,7 +276,8 @@
     "barkod": "8697666769383",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10080",
@@ -270,7 +290,8 @@
     "barkod": "8697666769376",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10081",
@@ -283,7 +304,8 @@
     "barkod": "8697666769413",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "STK-00000076",
@@ -296,7 +318,8 @@
     "barkod": "8697666766900",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10082",
@@ -309,7 +332,8 @@
     "barkod": "8697666763503",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kuruyemiş"
+    "kategori": "kuruyemiş",
+    "isNew": 0
   },
   {
     "kod": "ST-10083",
@@ -322,7 +346,8 @@
     "barkod": "8697666763480",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kuruyemiş"
+    "kategori": "kuruyemiş",
+    "isNew": 0
   },
   {
     "kod": "ST-10084",
@@ -335,7 +360,8 @@
     "barkod": "8697666762759",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10087",
@@ -348,7 +374,8 @@
     "barkod": "8697666766412",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10088",
@@ -361,7 +388,8 @@
     "barkod": "8697666760908",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10091",
@@ -374,7 +402,8 @@
     "barkod": "8697666767396",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Konserve"
+    "kategori": "Konserve",
+    "isNew": 0
   },
   {
     "kod": "ST-10092",
@@ -387,7 +416,8 @@
     "barkod": "8697666765064",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10093",
@@ -400,7 +430,8 @@
     "barkod": "8697666766863",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10094",
@@ -413,7 +444,8 @@
     "barkod": "8697666763558",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10096",
@@ -426,7 +458,8 @@
     "barkod": "8697666766467",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10097",
@@ -439,7 +472,8 @@
     "barkod": "8697666766573",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10098",
@@ -452,7 +486,8 @@
     "barkod": "8697666767044",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10099",
@@ -465,7 +500,8 @@
     "barkod": "8697666768997",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10100",
@@ -478,7 +514,8 @@
     "barkod": "8697666765507",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10101",
@@ -491,7 +528,8 @@
     "barkod": "8697666766177",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10102",
@@ -504,7 +542,8 @@
     "barkod": "8697666764456",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10103",
@@ -517,7 +556,8 @@
     "barkod": "8697666760656",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10106",
@@ -530,7 +570,8 @@
     "barkod": "8697666767365",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10107",
@@ -543,7 +584,8 @@
     "barkod": "8697666765279",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10108",
@@ -556,7 +598,8 @@
     "barkod": "8697666766429",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10109",
@@ -569,7 +612,8 @@
     "barkod": "8697666765675",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10111",
@@ -582,7 +626,8 @@
     "barkod": "8697666766986",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10112",
@@ -595,7 +640,8 @@
     "barkod": "8697666766443",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10118",
@@ -608,7 +654,8 @@
     "barkod": "8697666764104",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10120",
@@ -621,7 +668,8 @@
     "barkod": "8697666767334",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10123",
@@ -634,7 +682,8 @@
     "barkod": "8697666764265",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10124",
@@ -647,7 +696,8 @@
     "barkod": "8697666762179",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10126",
@@ -660,7 +710,8 @@
     "barkod": "8697666766344",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10127",
@@ -673,7 +724,8 @@
     "barkod": "8697666766351",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10128",
@@ -686,7 +738,8 @@
     "barkod": "8697666762520",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10129",
@@ -699,7 +752,8 @@
     "barkod": "8697666765934",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10130",
@@ -712,7 +766,8 @@
     "barkod": "8697666765941",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10131",
@@ -725,7 +780,8 @@
     "barkod": "8697666769291",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10134",
@@ -738,7 +794,8 @@
     "barkod": "8697666769345",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10136",
@@ -751,7 +808,8 @@
     "barkod": "8697666769369",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10137",
@@ -764,7 +822,8 @@
     "barkod": "8697666769352",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10140",
@@ -777,7 +836,8 @@
     "barkod": "8697666769109",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10145",
@@ -790,7 +850,8 @@
     "barkod": "8697666769185",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10149",
@@ -803,7 +864,8 @@
     "barkod": "8697666769529",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10151",
@@ -816,7 +878,8 @@
     "barkod": "8697666766733",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10152",
@@ -829,7 +892,8 @@
     "barkod": "8697666766740",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10155",
@@ -842,7 +906,8 @@
     "barkod": "8697666762209",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10157",
@@ -855,7 +920,8 @@
     "barkod": "8697666767341",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10160",
@@ -868,7 +934,8 @@
     "barkod": "8697666767266",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10162",
@@ -881,7 +948,8 @@
     "barkod": "8697666767419",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "irmik"
+    "kategori": "irmik",
+    "isNew": 0
   },
   {
     "kod": "ST-10163",
@@ -894,7 +962,8 @@
     "barkod": "8697666767310",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10164",
@@ -907,7 +976,8 @@
     "barkod": "8697666766474",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "STK-00000060",
@@ -920,7 +990,8 @@
     "barkod": "8697666769420",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10167",
@@ -933,7 +1004,8 @@
     "barkod": "8697666767150",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10169",
@@ -946,7 +1018,8 @@
     "barkod": "8697666762728",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10170",
@@ -959,7 +1032,8 @@
     "barkod": "8697666762766",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10171",
@@ -972,7 +1046,8 @@
     "barkod": "8697666762773",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10172",
@@ -985,7 +1060,8 @@
     "barkod": "8697666762704",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10173",
@@ -998,7 +1074,8 @@
     "barkod": "8697666762797",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10174",
@@ -1011,7 +1088,8 @@
     "barkod": "8697666768928",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10175",
@@ -1024,7 +1102,8 @@
     "barkod": "8697666762674",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10176",
@@ -1037,7 +1116,8 @@
     "barkod": "8697666769307",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10177",
@@ -1050,7 +1130,8 @@
     "barkod": "8697666762735",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10178",
@@ -1063,7 +1144,8 @@
     "barkod": "8697666768911",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10179",
@@ -1076,7 +1158,8 @@
     "barkod": "8697666768904",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10180",
@@ -1089,7 +1172,8 @@
     "barkod": "8697666768898",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10181",
@@ -1102,7 +1186,8 @@
     "barkod": "8697666762803",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10182",
@@ -1115,7 +1200,8 @@
     "barkod": "8697666762667",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10183",
@@ -1128,7 +1214,8 @@
     "barkod": "8697666762810",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10184",
@@ -1141,7 +1228,8 @@
     "barkod": "8697666762834",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10185",
@@ -1154,7 +1242,8 @@
     "barkod": "8697666762681",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10188",
@@ -1167,7 +1256,8 @@
     "barkod": "8697666765415",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10189",
@@ -1180,7 +1270,8 @@
     "barkod": "8697666762452",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10190",
@@ -1193,7 +1284,8 @@
     "barkod": "8697666766320",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10191",
@@ -1206,7 +1298,8 @@
     "barkod": "8697666766337",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10197",
@@ -1219,7 +1312,8 @@
     "barkod": "8697666765088",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10200",
@@ -1232,7 +1326,8 @@
     "barkod": "8697666766917",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10205",
@@ -1245,7 +1340,8 @@
     "barkod": "8697666763473",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10206",
@@ -1258,7 +1354,8 @@
     "barkod": "8697666766948",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10209",
@@ -1271,7 +1368,8 @@
     "barkod": "8697666766955",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10210",
@@ -1284,7 +1382,8 @@
     "barkod": "8697666766962",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10212",
@@ -1297,7 +1396,8 @@
     "barkod": "8697666767006",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10214",
@@ -1310,7 +1410,8 @@
     "barkod": "8697666767372",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10218",
@@ -1323,7 +1424,8 @@
     "barkod": "8697666766504",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "ST-10219",
@@ -1336,7 +1438,8 @@
     "barkod": "8697666766511",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "ST-10223",
@@ -1349,7 +1452,8 @@
     "barkod": "8697666766979",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10225",
@@ -1362,7 +1466,8 @@
     "barkod": "8697666766801",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10226",
@@ -1375,7 +1480,8 @@
     "barkod": "8697666766931",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10227",
@@ -1388,7 +1494,8 @@
     "barkod": "8697666766870",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10228",
@@ -1401,7 +1508,8 @@
     "barkod": "8697666766795",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10232",
@@ -1414,7 +1522,8 @@
     "barkod": "8697666768973",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10233",
@@ -1427,7 +1536,8 @@
     "barkod": "8697666768966",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10234",
@@ -1440,7 +1550,8 @@
     "barkod": "8697666767228",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10235",
@@ -1453,7 +1564,8 @@
     "barkod": "8697666767136",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10236",
@@ -1466,7 +1578,8 @@
     "barkod": "8697666767204",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10237",
@@ -1479,7 +1592,8 @@
     "barkod": "8697666767181",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10240",
@@ -1492,7 +1606,8 @@
     "barkod": "8697666767167",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10241",
@@ -1505,7 +1620,8 @@
     "barkod": "8697666767174",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10242",
@@ -1518,7 +1634,8 @@
     "barkod": "8697666767198",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10245",
@@ -1531,7 +1648,8 @@
     "barkod": "8697666763633",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10247",
@@ -1544,7 +1662,8 @@
     "barkod": "8697666766894",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10248",
@@ -1557,7 +1676,8 @@
     "barkod": "8697666767105",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10252",
@@ -1570,7 +1690,8 @@
     "barkod": "8697666763138",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10253",
@@ -1583,7 +1704,8 @@
     "barkod": "8697666765422",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10255",
@@ -1596,7 +1718,8 @@
     "barkod": "8697666769468",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10256",
@@ -1609,7 +1732,8 @@
     "barkod": "8697666769475",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10257",
@@ -1622,7 +1746,8 @@
     "barkod": "8697666769482",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10258",
@@ -1635,7 +1760,8 @@
     "barkod": "8697666769499",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10259",
@@ -1648,7 +1774,8 @@
     "barkod": "8697666766498",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10260",
@@ -1661,7 +1788,8 @@
     "barkod": "8697666766306",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10261",
@@ -1674,7 +1802,8 @@
     "barkod": "8697666766313",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10262",
@@ -1687,7 +1816,8 @@
     "barkod": "8697666768874",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10263",
@@ -1700,7 +1830,8 @@
     "barkod": "8697666768881",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10264",
@@ -1713,7 +1844,8 @@
     "barkod": "8697666768867",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10265",
@@ -1726,7 +1858,8 @@
     "barkod": "8697666761639",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10266",
@@ -1739,7 +1872,8 @@
     "barkod": "8697666766184",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10267",
@@ -1752,7 +1886,8 @@
     "barkod": "8697666769086",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10268",
@@ -1765,7 +1900,8 @@
     "barkod": "8697666769079",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10269",
@@ -1778,7 +1914,8 @@
     "barkod": "8697666747471",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10270",
@@ -1791,7 +1928,8 @@
     "barkod": "8697666764999",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10271",
@@ -1804,7 +1942,8 @@
     "barkod": "8697666764982",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10272",
@@ -1817,7 +1956,8 @@
     "barkod": "8697666767488",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Helva"
+    "kategori": "Helva",
+    "isNew": 0
   },
   {
     "kod": "ST-10273",
@@ -1830,7 +1970,8 @@
     "barkod": "8697666767143",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10276",
@@ -1843,7 +1984,8 @@
     "barkod": "8697666766818",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10277",
@@ -1856,7 +1998,8 @@
     "barkod": "8697666767082",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10278",
@@ -1869,7 +2012,8 @@
     "barkod": "8697666767051",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10280",
@@ -1882,7 +2026,8 @@
     "barkod": "8697666767129",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10282",
@@ -1895,7 +2040,8 @@
     "barkod": "8697666767075",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10283",
@@ -1908,7 +2054,8 @@
     "barkod": "8697666767099",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10284",
@@ -1921,7 +2068,8 @@
     "barkod": "8697666763589",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10288",
@@ -1934,7 +2082,8 @@
     "barkod": "8697666766368",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10289",
@@ -1947,7 +2096,8 @@
     "barkod": "8697666766375",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10290",
@@ -1960,7 +2110,8 @@
     "barkod": "8697666762940",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10292",
@@ -1973,7 +2124,8 @@
     "barkod": "8697666766399",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10293",
@@ -1986,7 +2138,8 @@
     "barkod": "8697666769918",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10294",
@@ -1999,7 +2152,8 @@
     "barkod": "8697666766924",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10297",
@@ -2012,7 +2166,8 @@
     "barkod": "8697666762148",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10302",
@@ -2025,7 +2180,8 @@
     "barkod": "8697666767808",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10306",
@@ -2038,7 +2194,8 @@
     "barkod": "8697666767709",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10311",
@@ -2051,7 +2208,8 @@
     "barkod": "8697666767525",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10316",
@@ -2064,7 +2222,8 @@
     "barkod": "8697666767815",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10317",
@@ -2077,7 +2236,8 @@
     "barkod": "8697666769277",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10318",
@@ -2090,7 +2250,8 @@
     "barkod": "8697666769154",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Makarna"
+    "kategori": "Makarna",
+    "isNew": 0
   },
   {
     "kod": "ST-10319",
@@ -2103,7 +2264,8 @@
     "barkod": "8697666769253",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10320",
@@ -2116,7 +2278,8 @@
     "barkod": "8697666769260",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10321",
@@ -2129,7 +2292,8 @@
     "barkod": "8697666767556",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10322",
@@ -2142,7 +2306,8 @@
     "barkod": "8697666767532",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10323",
@@ -2155,7 +2320,8 @@
     "barkod": "8697666767549",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10325",
@@ -2168,7 +2334,8 @@
     "barkod": "8697666769451",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10326",
@@ -2181,7 +2348,8 @@
     "barkod": "8697666769444",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10344",
@@ -2194,7 +2362,8 @@
     "barkod": "8691039020484",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10347",
@@ -2207,7 +2376,8 @@
     "barkod": "8691039020477",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10352",
@@ -2220,7 +2390,8 @@
     "barkod": "8691039020227-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10353",
@@ -2233,7 +2404,8 @@
     "barkod": "8691039020910",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10358",
@@ -2246,7 +2418,8 @@
     "barkod": "8691039020309-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10360",
@@ -2259,7 +2432,8 @@
     "barkod": "8691039020255-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10361",
@@ -2272,7 +2446,8 @@
     "barkod": "8691039020804",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10367",
@@ -2285,7 +2460,8 @@
     "barkod": "8691039020606",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10369",
@@ -2298,7 +2474,8 @@
     "barkod": "8691039020224",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10370",
@@ -2311,7 +2488,8 @@
     "barkod": "8691039020750",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10374",
@@ -2324,7 +2502,8 @@
     "barkod": "8691039020811",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10375",
@@ -2337,7 +2516,8 @@
     "barkod": "8691039020903",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10376",
@@ -2350,7 +2530,8 @@
     "barkod": "8691039020620",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10378",
@@ -2363,7 +2544,8 @@
     "barkod": "8691039020705",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10380",
@@ -2376,7 +2558,8 @@
     "barkod": "8683555359629",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10381",
@@ -2389,7 +2572,8 @@
     "barkod": "8683555359605",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10382",
@@ -2402,7 +2586,8 @@
     "barkod": "8683555359612",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10383",
@@ -2415,7 +2600,8 @@
     "barkod": "8683555359575",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10385",
@@ -2428,7 +2614,8 @@
     "barkod": "8683555359582",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10386",
@@ -2441,7 +2628,8 @@
     "barkod": "8683555359599",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10387",
@@ -2454,7 +2642,8 @@
     "barkod": "8682815018788",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10390",
@@ -2467,7 +2656,8 @@
     "barkod": "8682815018771",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10391",
@@ -2480,7 +2670,8 @@
     "barkod": "8682815018887",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10396",
@@ -2493,7 +2684,8 @@
     "barkod": "8682815018856",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10397",
@@ -2506,7 +2698,8 @@
     "barkod": "8682815018818",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10401",
@@ -2519,7 +2712,8 @@
     "barkod": "8682815018900",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10402",
@@ -2532,7 +2726,8 @@
     "barkod": "8682815018917",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10408",
@@ -2545,7 +2740,8 @@
     "barkod": "8681349442250",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10409",
@@ -2558,7 +2754,8 @@
     "barkod": "8681349442335",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10410",
@@ -2571,7 +2768,8 @@
     "barkod": "8681349442342",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10411",
@@ -2584,7 +2782,8 @@
     "barkod": "8681349442359",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10412",
@@ -2597,7 +2796,8 @@
     "barkod": "8681349442298",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10438",
@@ -2610,7 +2810,8 @@
     "barkod": "8682815018238",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10441",
@@ -2623,7 +2824,8 @@
     "barkod": "8681349442489",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10442",
@@ -2636,7 +2838,8 @@
     "barkod": "8681349442458",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10443",
@@ -2649,7 +2852,8 @@
     "barkod": "8681349442465",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10444",
@@ -2662,7 +2866,8 @@
     "barkod": "8682815018764",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10445",
@@ -2675,7 +2880,8 @@
     "barkod": "868355560049",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10448",
@@ -2688,7 +2894,8 @@
     "barkod": "8682815018795",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10456",
@@ -2701,7 +2908,8 @@
     "barkod": "8683555560551",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10460",
@@ -2714,7 +2922,8 @@
     "barkod": "8683555560568",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10461",
@@ -2727,7 +2936,8 @@
     "barkod": "8683555560575",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10469",
@@ -2740,7 +2950,8 @@
     "barkod": "8683555560094",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10473",
@@ -2753,7 +2964,8 @@
     "barkod": "GÖKIZ",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "STK-00000073",
@@ -2766,7 +2978,8 @@
     "barkod": "",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "MASRAF KARTLARI"
+    "kategori": "MASRAF KARTLARI",
+    "isNew": 0
   },
   {
     "kod": "ST-10474",
@@ -2779,7 +2992,8 @@
     "barkod": "8682139418011",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10476",
@@ -2792,7 +3006,8 @@
     "barkod": "8682139418028",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10477",
@@ -2805,7 +3020,8 @@
     "barkod": "8682139418134",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "DİĞER"
+    "kategori": "DİĞER",
+    "isNew": 0
   },
   {
     "kod": "ST-10480",
@@ -2818,7 +3034,8 @@
     "barkod": "8697960101650",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10481",
@@ -2831,7 +3048,8 @@
     "barkod": "8697960101360",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10482",
@@ -2844,7 +3062,8 @@
     "barkod": "8697960101506",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10483",
@@ -2857,7 +3076,8 @@
     "barkod": "8697960101674",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10485",
@@ -2870,7 +3090,8 @@
     "barkod": "8697960101629",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10487",
@@ -2883,7 +3104,8 @@
     "barkod": "869796010163",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10488",
@@ -2896,7 +3118,8 @@
     "barkod": "8697960101636",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10489",
@@ -2909,7 +3132,8 @@
     "barkod": "8697960101261",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10490",
@@ -2922,7 +3146,8 @@
     "barkod": "8697960101995",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Turşu"
+    "kategori": "Turşu",
+    "isNew": 0
   },
   {
     "kod": "ST-10493",
@@ -2935,7 +3160,8 @@
     "barkod": "8693738064028",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10494",
@@ -2948,7 +3174,8 @@
     "barkod": "8693738064011",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kahvaltılık"
+    "kategori": "kahvaltılık",
+    "isNew": 0
   },
   {
     "kod": "ST-10495",
@@ -2961,7 +3188,8 @@
     "barkod": "8693738061614",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kahvaltılık"
+    "kategori": "kahvaltılık",
+    "isNew": 0
   },
   {
     "kod": "ST-10496",
@@ -2974,7 +3202,8 @@
     "barkod": "8693738064196",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10497",
@@ -2987,7 +3216,8 @@
     "barkod": "8693738064004",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10498",
@@ -3000,7 +3230,8 @@
     "barkod": "8693738063977",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10499",
@@ -3013,7 +3244,8 @@
     "barkod": "8693738064202",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10500",
@@ -3026,7 +3258,8 @@
     "barkod": "8693738064219",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10501",
@@ -3039,7 +3272,8 @@
     "barkod": "8693738063953",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10502",
@@ -3052,7 +3286,8 @@
     "barkod": "8693738064158",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10503",
@@ -3065,7 +3300,8 @@
     "barkod": "8693738062413",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10504",
@@ -3078,7 +3314,8 @@
     "barkod": "8693738063663",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10505",
@@ -3091,7 +3328,8 @@
     "barkod": "8693738064165",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10506",
@@ -3104,7 +3342,8 @@
     "barkod": "8693738062406",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10507",
@@ -3117,7 +3356,8 @@
     "barkod": "8693738063656",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10508",
@@ -3130,7 +3370,8 @@
     "barkod": "8693738062598",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10510",
@@ -3143,7 +3384,8 @@
     "barkod": "8693738063984",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10511",
@@ -3156,7 +3398,8 @@
     "barkod": "8693738063991",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Marmelat"
+    "kategori": "Marmelat",
+    "isNew": 0
   },
   {
     "kod": "ST-10512",
@@ -3169,7 +3412,8 @@
     "barkod": "8693738062420",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10513",
@@ -3182,7 +3426,8 @@
     "barkod": "8693738063670",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10514",
@@ -3195,7 +3440,8 @@
     "barkod": "8693738064141",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10515",
@@ -3208,7 +3454,8 @@
     "barkod": "8693738062390",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10516",
@@ -3221,7 +3468,8 @@
     "barkod": "8693738063649",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10517",
@@ -3234,7 +3482,8 @@
     "barkod": "8693738063960",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Reçel"
+    "kategori": "Reçel",
+    "isNew": 0
   },
   {
     "kod": "ST-10518",
@@ -3247,7 +3496,8 @@
     "barkod": "8693738061607",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kahvaltılık"
+    "kategori": "kahvaltılık",
+    "isNew": 0
   },
   {
     "kod": "ST-10520",
@@ -3260,7 +3510,8 @@
     "barkod": "8680461063589",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "STK-00000064",
@@ -3273,7 +3524,8 @@
     "barkod": "",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "STK-00000062",
@@ -3286,7 +3538,8 @@
     "barkod": "",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "STK-00000063",
@@ -3299,7 +3552,8 @@
     "barkod": "8680461063183",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "STK-00000065",
@@ -3312,7 +3566,8 @@
     "barkod": "",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "STK-00000061",
@@ -3325,7 +3580,8 @@
     "barkod": "8680461061868",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "ST-10522",
@@ -3338,7 +3594,8 @@
     "barkod": "8680466106123",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sos"
+    "kategori": "Sos",
+    "isNew": 0
   },
   {
     "kod": "ST-10525",
@@ -3351,7 +3608,8 @@
     "barkod": "8683642275108",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10526",
@@ -3364,7 +3622,8 @@
     "barkod": "8683642275016",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10527",
@@ -3377,7 +3636,8 @@
     "barkod": "8683642275092",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10528",
@@ -3390,7 +3650,8 @@
     "barkod": "8683642275146",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10529",
@@ -3403,7 +3664,8 @@
     "barkod": "8683642275023",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10530",
@@ -3416,7 +3678,8 @@
     "barkod": "8683642273012",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tuz"
+    "kategori": "Tuz",
+    "isNew": 0
   },
   {
     "kod": "ST-10531",
@@ -3429,7 +3692,8 @@
     "barkod": "8683642273029",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tuz"
+    "kategori": "Tuz",
+    "isNew": 0
   },
   {
     "kod": "ST-10532",
@@ -3442,7 +3706,8 @@
     "barkod": "8683642273050",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10533",
@@ -3455,7 +3720,8 @@
     "barkod": "8683642273067",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10534",
@@ -3468,7 +3734,8 @@
     "barkod": "8683642275139",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10535",
@@ -3481,7 +3748,8 @@
     "barkod": "8683642273111",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10536",
@@ -3494,7 +3762,8 @@
     "barkod": "8683642273036",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tuz"
+    "kategori": "Tuz",
+    "isNew": 0
   },
   {
     "kod": "ST-10537",
@@ -3507,7 +3776,8 @@
     "barkod": "8683642273043",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tuz"
+    "kategori": "Tuz",
+    "isNew": 0
   },
   {
     "kod": "ST-10538",
@@ -3520,7 +3790,8 @@
     "barkod": "8683642275047",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10539",
@@ -3533,7 +3804,8 @@
     "barkod": "8683642275115",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10540",
@@ -3546,7 +3818,8 @@
     "barkod": "8683642273135",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10542",
@@ -3559,7 +3832,8 @@
     "barkod": "8683642273074",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10543",
@@ -3572,7 +3846,8 @@
     "barkod": "8683642275054",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10544",
@@ -3585,7 +3860,8 @@
     "barkod": "8683642275030",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10545",
@@ -3598,7 +3874,8 @@
     "barkod": "8683642273081",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10546",
@@ -3611,7 +3888,8 @@
     "barkod": "8683642273098",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10547",
@@ -3624,7 +3902,8 @@
     "barkod": "8683642272152",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10548",
@@ -3637,7 +3916,8 @@
     "barkod": "8683642272176",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10549",
@@ -3650,7 +3930,8 @@
     "barkod": "8683642275078",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10550",
@@ -3663,7 +3944,8 @@
     "barkod": "8683642275061",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10552",
@@ -3676,7 +3958,8 @@
     "barkod": "8683642271018",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10553",
@@ -3689,7 +3972,8 @@
     "barkod": "8683642272411",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10554",
@@ -3702,7 +3986,8 @@
     "barkod": "8683642272381",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10555",
@@ -3715,7 +4000,8 @@
     "barkod": "8683642271025",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10556",
@@ -3728,7 +4014,8 @@
     "barkod": "8683642274477",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10557",
@@ -3741,7 +4028,8 @@
     "barkod": "8683642274343",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10558",
@@ -3754,7 +4042,8 @@
     "barkod": "8683642271162",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10562",
@@ -3767,7 +4056,8 @@
     "barkod": "8683642274149",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10567",
@@ -3780,7 +4070,8 @@
     "barkod": "8683642274064",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10568",
@@ -3793,7 +4084,8 @@
     "barkod": "8683642274057",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10569",
@@ -3806,7 +4098,8 @@
     "barkod": "8683642274811",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10571",
@@ -3819,7 +4112,8 @@
     "barkod": "8683642271032",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10578",
@@ -3832,7 +4126,8 @@
     "barkod": "8683642274408",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bal"
+    "kategori": "Bal",
+    "isNew": 0
   },
   {
     "kod": "ST-10579",
@@ -3845,7 +4140,8 @@
     "barkod": "8683642271049",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10584",
@@ -3858,7 +4154,8 @@
     "barkod": "8683642272015",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10585",
@@ -3871,7 +4168,8 @@
     "barkod": "8683642271056",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10586",
@@ -3884,7 +4182,8 @@
     "barkod": "8683642272022",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10587",
@@ -3897,7 +4196,8 @@
     "barkod": "8683642274422",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Salça"
+    "kategori": "Salça",
+    "isNew": 0
   },
   {
     "kod": "ST-10591",
@@ -3910,7 +4210,8 @@
     "barkod": "8683642271247-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10592",
@@ -3923,7 +4224,8 @@
     "barkod": "8683642274491",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10593",
@@ -3936,7 +4238,8 @@
     "barkod": "8683642272039",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10598",
@@ -3949,7 +4252,8 @@
     "barkod": "8683642272053",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10601",
@@ -3962,7 +4266,8 @@
     "barkod": "8683642272336",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10602",
@@ -3975,7 +4280,8 @@
     "barkod": "8683642271131",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10603",
@@ -3988,7 +4294,8 @@
     "barkod": "8683642271230-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10604",
@@ -4001,7 +4308,8 @@
     "barkod": "8683642271117",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10605",
@@ -4014,7 +4322,8 @@
     "barkod": "8683642272091",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10606",
@@ -4027,7 +4336,8 @@
     "barkod": "8683642271155",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bebek"
+    "kategori": "Bebek",
+    "isNew": 0
   },
   {
     "kod": "ST-10607",
@@ -4040,7 +4350,8 @@
     "barkod": "8683642271179",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10608",
@@ -4053,7 +4364,8 @@
     "barkod": "8683642272046",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10609",
@@ -4066,7 +4378,8 @@
     "barkod": "8683642272190",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10610",
@@ -4079,7 +4392,8 @@
     "barkod": "8683642272206",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10611",
@@ -4092,7 +4406,8 @@
     "barkod": "8683642274163",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10612",
@@ -4105,7 +4420,8 @@
     "barkod": "8683642274576",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10613",
@@ -4118,7 +4434,8 @@
     "barkod": "8683642274569",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10614",
@@ -4131,7 +4448,8 @@
     "barkod": "8683642274156",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10615",
@@ -4144,7 +4462,8 @@
     "barkod": "8683642273128",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10616",
@@ -4157,7 +4476,8 @@
     "barkod": "8683642272213",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10617",
@@ -4170,7 +4490,8 @@
     "barkod": "8683642272220",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10618",
@@ -4183,7 +4504,8 @@
     "barkod": "8683642272060",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10619",
@@ -4196,7 +4518,8 @@
     "barkod": "8683642271162-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10620",
@@ -4209,7 +4532,8 @@
     "barkod": "8683642272237",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10622",
@@ -4222,7 +4546,8 @@
     "barkod": "8683642272268",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10623",
@@ -4235,7 +4560,8 @@
     "barkod": "8683642274101",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10624",
@@ -4248,7 +4574,8 @@
     "barkod": "8683642274095",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10625",
@@ -4261,7 +4588,8 @@
     "barkod": "8683642272251",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10626",
@@ -4274,7 +4602,8 @@
     "barkod": "8683642272275",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10627",
@@ -4287,7 +4616,8 @@
     "barkod": "8683642272282",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10628",
@@ -4300,7 +4630,8 @@
     "barkod": "8683642271308",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10629",
@@ -4313,7 +4644,8 @@
     "barkod": "8683642271315",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10630",
@@ -4326,7 +4658,8 @@
     "barkod": "8683642272299",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10631",
@@ -4339,7 +4672,8 @@
     "barkod": "8683642272305",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10632",
@@ -4352,7 +4686,8 @@
     "barkod": "8683642271063",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10633",
@@ -4365,7 +4700,8 @@
     "barkod": "8683642272077",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10634",
@@ -4378,7 +4714,8 @@
     "barkod": "8683642272084",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10635",
@@ -4391,7 +4728,8 @@
     "barkod": "8683642274200",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10636",
@@ -4404,7 +4742,8 @@
     "barkod": "8683642274194",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10640",
@@ -4417,7 +4756,8 @@
     "barkod": "8683642274040",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10641",
@@ -4430,7 +4770,8 @@
     "barkod": "8683642274033",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10642",
@@ -4443,7 +4784,8 @@
     "barkod": "8683642274026",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10643",
@@ -4456,7 +4798,8 @@
     "barkod": "8683642274019",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10644",
@@ -4469,7 +4812,8 @@
     "barkod": "8683642272312",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10645",
@@ -4482,7 +4826,8 @@
     "barkod": "8683642272329",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10646",
@@ -4495,7 +4840,8 @@
     "barkod": "8683642271070",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10647",
@@ -4508,7 +4854,8 @@
     "barkod": "8683642271087",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10648",
@@ -4521,7 +4868,8 @@
     "barkod": "8683642272367",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10649",
@@ -4534,7 +4882,8 @@
     "barkod": "8683642272350",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10650",
@@ -4547,7 +4896,8 @@
     "barkod": "8683642274750",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10651",
@@ -4560,7 +4910,8 @@
     "barkod": "8683642271124",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10652",
@@ -4573,7 +4924,8 @@
     "barkod": "8683642274804",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10654",
@@ -4586,7 +4938,8 @@
     "barkod": "8683642274583",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10655",
@@ -4599,7 +4952,8 @@
     "barkod": "8683642274286",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "müsliler"
+    "kategori": "müsliler",
+    "isNew": 0
   },
   {
     "kod": "ST-10656",
@@ -4612,7 +4966,8 @@
     "barkod": "8683642272107",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10657",
@@ -4625,7 +4980,8 @@
     "barkod": "8683642271254-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10659",
@@ -4638,7 +4994,8 @@
     "barkod": "8683642274637",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10660",
@@ -4651,7 +5008,8 @@
     "barkod": "8683642271056-",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10661",
@@ -4664,7 +5022,8 @@
     "barkod": "8683642274132",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10662",
@@ -4677,7 +5036,8 @@
     "barkod": "8683642274187",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10663",
@@ -4690,7 +5050,8 @@
     "barkod": "8683642274170",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10666",
@@ -4703,7 +5064,8 @@
     "barkod": "8683642271094",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10669",
@@ -4716,7 +5078,8 @@
     "barkod": "8683642271100",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10672",
@@ -4729,7 +5092,8 @@
     "barkod": "8683642272404",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10673",
@@ -4742,7 +5106,8 @@
     "barkod": "8683642272398",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10674",
@@ -4755,7 +5120,8 @@
     "barkod": "8683642274231",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10678",
@@ -4768,7 +5134,8 @@
     "barkod": "8683642275122",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10679",
@@ -4781,7 +5148,8 @@
     "barkod": "8683642272114",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10680",
@@ -4794,7 +5162,8 @@
     "barkod": "8683642272121",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10681",
@@ -4807,7 +5176,8 @@
     "barkod": "8683642274347",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10682",
@@ -4820,7 +5190,8 @@
     "barkod": "8683642274354",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10683",
@@ -4833,7 +5204,8 @@
     "barkod": "8683642274361",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10684",
@@ -4846,7 +5218,8 @@
     "barkod": "8683642274378",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Tahin"
+    "kategori": "Tahin",
+    "isNew": 0
   },
   {
     "kod": "ST-10685",
@@ -4859,7 +5232,8 @@
     "barkod": "8683642274545",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10686",
@@ -4872,7 +5246,8 @@
     "barkod": "8683642274644",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10687",
@@ -4885,7 +5260,8 @@
     "barkod": "8683642274248",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10688",
@@ -4898,7 +5274,8 @@
     "barkod": "8683642272138",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10689",
@@ -4911,7 +5288,8 @@
     "barkod": "8683642272145",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10692",
@@ -4924,7 +5302,8 @@
     "barkod": "8683642271148",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Çay"
+    "kategori": "Çay",
+    "isNew": 0
   },
   {
     "kod": "ST-10694",
@@ -4937,7 +5316,8 @@
     "barkod": "8683642274125",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10695",
@@ -4950,7 +5330,8 @@
     "barkod": "8683642274118",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10696",
@@ -4963,7 +5344,8 @@
     "barkod": "8683642274293",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Bakliyat"
+    "kategori": "Bakliyat",
+    "isNew": 0
   },
   {
     "kod": "ST-10697",
@@ -4976,7 +5358,8 @@
     "barkod": "8683642274590",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Un"
+    "kategori": "Un",
+    "isNew": 0
   },
   {
     "kod": "ST-10698",
@@ -4989,7 +5372,8 @@
     "barkod": "8683642272169",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10700",
@@ -5002,7 +5386,8 @@
     "barkod": "8683642272183",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Baharat"
+    "kategori": "Baharat",
+    "isNew": 0
   },
   {
     "kod": "ST-10702",
@@ -5015,7 +5400,8 @@
     "barkod": "8683808602564",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kuruyemiş"
+    "kategori": "kuruyemiş",
+    "isNew": 0
   },
   {
     "kod": "ST-10703",
@@ -5028,7 +5414,8 @@
     "barkod": "8683808600393",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "kuruyemiş"
+    "kategori": "kuruyemiş",
+    "isNew": 0
   },
   {
     "kod": "STK-00000068",
@@ -5041,7 +5428,8 @@
     "barkod": "8691313010033",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "STK-00000067",
@@ -5054,7 +5442,8 @@
     "barkod": "8691313010569",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Yağ"
+    "kategori": "Yağ",
+    "isNew": 0
   },
   {
     "kod": "ST-10704",
@@ -5067,7 +5456,8 @@
     "barkod": "8691973462210",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10706",
@@ -5080,7 +5470,8 @@
     "barkod": "8695044896225",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10708",
@@ -5093,7 +5484,8 @@
     "barkod": "8699405860139",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10709",
@@ -5106,7 +5498,8 @@
     "barkod": "8699405860153",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10710",
@@ -5119,7 +5512,8 @@
     "barkod": "8699405860238",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10711",
@@ -5132,7 +5526,8 @@
     "barkod": "8699405860283",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10713",
@@ -5145,7 +5540,8 @@
     "barkod": "8699405860085",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10720",
@@ -5158,7 +5554,8 @@
     "barkod": "8699405860115",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10725",
@@ -5171,7 +5568,8 @@
     "barkod": "8699405860009",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10726",
@@ -5184,7 +5582,8 @@
     "barkod": "8683589585032",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10727",
@@ -5197,7 +5596,8 @@
     "barkod": "8683589585056",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Zeytin"
+    "kategori": "Zeytin",
+    "isNew": 0
   },
   {
     "kod": "ST-10728",
@@ -5210,7 +5610,8 @@
     "barkod": "8680461064944",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10730",
@@ -5223,7 +5624,8 @@
     "barkod": "8680461061509",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10731",
@@ -5236,7 +5638,8 @@
     "barkod": "8680461061523",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10732",
@@ -5249,7 +5652,8 @@
     "barkod": "8683382479191",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10735",
@@ -5262,7 +5666,8 @@
     "barkod": "8680461061400",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10737",
@@ -5275,7 +5680,8 @@
     "barkod": "8680461061448",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10739",
@@ -5288,7 +5694,8 @@
     "barkod": "8680461061547",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10740",
@@ -5301,7 +5708,8 @@
     "barkod": "8680461061431",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10741",
@@ -5314,7 +5722,8 @@
     "barkod": "8680461061295",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "meyve konsantre"
+    "kategori": "meyve konsantre",
+    "isNew": 0
   },
   {
     "kod": "ST-10742",
@@ -5327,7 +5736,8 @@
     "barkod": "8680461064319",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10743",
@@ -5340,7 +5750,8 @@
     "barkod": "8680461064302",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Pekmez"
+    "kategori": "Pekmez",
+    "isNew": 0
   },
   {
     "kod": "ST-10746",
@@ -5353,7 +5764,8 @@
     "barkod": "8680461061530",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Sirke"
+    "kategori": "Sirke",
+    "isNew": 0
   },
   {
     "kod": "ST-10747",
@@ -5366,7 +5778,8 @@
     "barkod": "8681982003115",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   },
   {
     "kod": "ST-10748",
@@ -5379,7 +5792,8 @@
     "barkod": "8681982003122",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   },
   {
     "kod": "ST-10749",
@@ -5392,7 +5806,8 @@
     "barkod": "8681982003344",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   },
   {
     "kod": "ST-10750",
@@ -5405,7 +5820,8 @@
     "barkod": "8681982003146",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   },
   {
     "kod": "ST-10751",
@@ -5418,7 +5834,8 @@
     "barkod": "8681982003320",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   },
   {
     "kod": "ST-10752",
@@ -5431,6 +5848,7 @@
     "barkod": "8681982003160",
     "aciklama": "",
     "gorsel": "",
-    "kategori": "Cips"
+    "kategori": "Cips",
+    "isNew": 0
   }
 ]
