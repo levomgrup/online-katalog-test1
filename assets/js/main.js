@@ -1,36 +1,244 @@
 let products = [];
+let currentBrand = 'all';
+let orderBasket = new Map(); // Sipariş sepeti
 
 // Ürünleri yükle
 fetch('assets/js/products.json')
     .then(response => response.json())
     .then(data => {
         products = data;
+        setupBrandFilter();
         displayProducts(products);
+        setupOrderButton();
     })
     .catch(error => console.error('Ürünler yüklenirken hata oluştu:', error));
+
+// Marka filtresi oluştur
+function setupBrandFilter() {
+    const brands = ['Tümü', ...new Set(products.map(p => p.marka))].filter(Boolean);
+    const filterContainer = document.getElementById('brandFilter');
+    
+    filterContainer.innerHTML = brands.map(brand => `
+        <button class="btn ${brand === 'Tümü' ? 'btn-primary' : 'btn-outline-primary'} me-2 mb-2" 
+                onclick="filterByBrand('${brand === 'Tümü' ? 'all' : brand}')">
+            ${brand}
+        </button>
+    `).join('');
+}
+
+// Markaya göre filtrele
+function filterByBrand(brand) {
+    currentBrand = brand;
+    const buttons = document.querySelectorAll('#brandFilter button');
+    buttons.forEach(btn => {
+        btn.classList.remove('btn-primary');
+        btn.classList.add('btn-outline-primary');
+        if (btn.textContent.trim() === (brand === 'all' ? 'Tümü' : brand)) {
+            btn.classList.remove('btn-outline-primary');
+            btn.classList.add('btn-primary');
+        }
+    });
+    
+    const filteredProducts = brand === 'all' 
+        ? products 
+        : products.filter(p => p.marka === brand);
+    displayProducts(filteredProducts);
+}
+
+// Sipariş butonunu oluştur
+function setupOrderButton() {
+    let orderButton = document.createElement('div');
+    orderButton.className = 'fixed-order-button d-none';
+    orderButton.innerHTML = `
+        <button class="btn btn-success btn-lg" onclick="sendCollectedOrders()">
+            <i class="fab fa-whatsapp"></i> Siparişi Tamamla
+            <span class="order-count badge bg-light text-success ms-2">0</span>
+        </button>
+    `;
+    document.body.appendChild(orderButton);
+}
+
+// Sepeti güncelle
+function updateOrderBasket(productCode, quantity) {
+    const product = products.find(p => p.kod === productCode);
+    if (!product) return;
+
+    if (quantity > 0) {
+        orderBasket.set(productCode, {
+            product: product,
+            quantity: quantity
+        });
+    } else {
+        orderBasket.delete(productCode);
+    }
+
+    // Sipariş butonunu güncelle
+    const orderButton = document.querySelector('.fixed-order-button');
+    const orderCount = orderBasket.size;
+    
+    if (orderCount > 0) {
+        orderButton.classList.remove('d-none');
+        orderButton.querySelector('.order-count').textContent = orderCount;
+    } else {
+        orderButton.classList.add('d-none');
+    }
+}
+
+// Tüm siparişleri gönder
+function sendCollectedOrders() {
+    if (orderBasket.size === 0) return;
+
+    let message = 'Merhaba,\n\nSipariş vermek istediğim ürünler:\n\n';
+    orderBasket.forEach((order, productCode) => {
+        message += `- ${order.product.ad} (Ürün Kodu: ${productCode})\n`;
+        message += `  Miktar: ${order.quantity} ${order.product.birim}\n\n`;
+    });
+
+    window.open(`https://wa.me/905XXXXXXXXX?text=${encodeURIComponent(message)}`, '_blank');
+    
+    // Sepeti temizle
+    orderBasket.clear();
+    document.querySelector('.fixed-order-button').classList.add('d-none');
+    
+    // Tüm quantity inputları sıfırla
+    document.querySelectorAll('input[id^="quantity-"]').forEach(input => {
+        input.value = "0";
+    });
+}
 
 // Ürünleri görüntüle
 function displayProducts(productsToShow) {
     const container = document.getElementById('productContainer');
     container.innerHTML = '';
 
+    // Ürünleri markalara göre grupla
+    const productsByBrand = {};
     productsToShow.forEach(product => {
-        const card = document.createElement('div');
-        card.className = 'col-md-4 col-lg-3';
-        card.innerHTML = `
-            <div class="card product-card" onclick="showProductDetails('${product.kod}')">
-                <img src="${product.gorsel}" class="card-img-top" alt="${product.ad}" onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
-                <div class="card-body">
-                    <h5 class="card-title">${product.ad}</h5>
-                    <p class="card-text">${product.marka}</p>
-                    <p class="card-text">
-                        <strong>Fiyat: ${product.fiyat} ${product.para_birimi}</strong>
-                    </p>
-                </div>
-            </div>
-        `;
-        container.appendChild(card);
+        const brand = product.marka || 'Diğer';
+        if (!productsByBrand[brand]) {
+            productsByBrand[brand] = [];
+        }
+        productsByBrand[brand].push(product);
     });
+
+    // Her marka için ürünleri göster
+    Object.keys(productsByBrand).sort().forEach(brand => {
+        // Marka başlığı ekle
+        const brandHeader = document.createElement('div');
+        brandHeader.className = 'col-12 brand-section mb-4';
+        brandHeader.innerHTML = `
+            <h3 class="brand-header">
+                ${brand}
+                <small class="text-muted">(${productsByBrand[brand].length} ürün)</small>
+            </h3>
+            <hr class="brand-divider">
+        `;
+        container.appendChild(brandHeader);
+
+        // Marka için ürün kartları satırı
+        const brandRow = document.createElement('div');
+        brandRow.className = 'row mb-5';
+
+        // Markanın ürünlerini göster
+        productsByBrand[brand].forEach(product => {
+            const productCol = document.createElement('div');
+            productCol.className = 'col-md-4 col-lg-3 mb-4';
+            
+            // Stok durumu kontrolü
+            const isOutOfStock = product.stok === "0" || product.stok === 0;
+            const stockWarning = isOutOfStock ? 
+                '<div class="stock-warning">Tedarik süreci 2 haftaya kadar çıkabilmektedir</div>' : '';
+            
+            // HTML özel karakterleri için escape işlemi
+            const escapedTitle = product.ad
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#039;');
+            
+            productCol.innerHTML = `
+                <div class="card product-card h-100 shadow-sm">
+                    <div class="card-img-wrapper">
+                        <img src="images/${product.gorsel}" class="card-img-top" alt="${escapedTitle}" 
+                             onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
+                    </div>
+                    <div class="card-body d-flex flex-column">
+                        <div class="brand-badge mb-2">
+                            <span class="badge bg-secondary">${product.marka}</span>
+                        </div>
+                        <h5 class="card-title" data-tooltip="${escapedTitle}">${escapedTitle}</h5>
+                        <p class="card-text">
+                            <small class="text-muted">Stok: ${product.stok} ${product.birim}</small>
+                            ${stockWarning}
+                        </p>
+                        <div class="mt-auto">
+                            <p class="card-text mb-2">
+                                <strong class="text-primary h5">${product.fiyat} ${product.para_birimi}</strong>
+                            </p>
+                            <div class="quantity-input mb-2">
+                                <div class="input-group input-group-sm">
+                                    <button class="btn btn-outline-secondary" type="button" 
+                                            onclick="updateCardQuantity('${product.kod}', 'decrease')">-</button>
+                                    <input type="number" class="form-control text-center" 
+                                           id="quantity-${product.kod}" value="0" min="0"
+                                           onfocus="handleQuantityFocus(this)"
+                                           oninput="validateQuantityInput(this)"
+                                           onchange="updateOrderBasket('${product.kod}', this.value)">
+                                    <button class="btn btn-outline-secondary" type="button" 
+                                            onclick="updateCardQuantity('${product.kod}', 'increase')">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            brandRow.appendChild(productCol);
+        });
+
+        container.appendChild(brandRow);
+    });
+}
+
+// Input alanına tıklandığında veya odaklandığında
+function handleQuantityFocus(input) {
+    // Eğer değer 0 ise, tüm metni seç
+    if (input.value === '0') {
+        input.select();
+    }
+}
+
+// Sayı girişi kontrolü
+function validateQuantityInput(input) {
+    // Sadece sayıları kabul et
+    input.value = input.value.replace(/[^0-9]/g, '');
+    
+    // Boş veya geçersiz değer kontrolü
+    if (input.value === '' || isNaN(input.value)) {
+        input.value = '0';
+    }
+    
+    // Başındaki sıfırları kaldır
+    input.value = parseInt(input.value).toString();
+    
+    // Minimum 0 kontrolü
+    if (parseInt(input.value) < 0) {
+        input.value = '0';
+    }
+}
+
+// Kart üzerindeki miktar güncelleme fonksiyonu
+function updateCardQuantity(productCode, action) {
+    const input = document.getElementById(`quantity-${productCode}`);
+    let value = parseInt(input.value);
+    
+    if (action === 'increase') {
+        input.value = value + 1;
+    } else if (action === 'decrease' && value > 0) {
+        input.value = value - 1;
+    }
+    
+    updateOrderBasket(productCode, parseInt(input.value));
 }
 
 // Ürün detaylarını göster
@@ -40,38 +248,88 @@ function showProductDetails(urunKodu) {
 
     const modal = new bootstrap.Modal(document.getElementById('productModal'));
     document.querySelector('#productModal .modal-title').textContent = product.ad;
-    document.getElementById('modalImage').src = product.gorsel;
+    document.getElementById('modalImage').src = `images/${product.gorsel}`;
     document.getElementById('modalImage').onerror = function() {
         this.src = 'https://via.placeholder.com/300x200?text=Ürün+Görseli';
     };
     
     const details = document.getElementById('modalDetails');
     details.innerHTML = `
-        <h4>${product.ad}</h4>
-        <p>Marka: ${product.marka}</p>
-        <p>Kategori: ${product.kategori}</p>
-        <p>Stok: ${product.stok} ${product.birim}</p>
-        <p>${product.aciklama || ''}</p>
-        <p class="h4">Fiyat: ${product.fiyat} ${product.para_birimi}</p>
-        <p>Ürün Kodu: ${product.kod}</p>
-        <p>Barkod: ${product.barkod}</p>
+        <h4 class="mb-3">${product.ad}</h4>
+        <div class="product-details">
+            <div class="detail-item">
+                <span class="label">Marka:</span>
+                <span class="value">${product.marka}</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Kategori:</span>
+                <span class="value">${product.kategori}</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Stok:</span>
+                <span class="value">${product.stok} ${product.birim}</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Ürün Kodu:</span>
+                <span class="value">${product.kod}</span>
+            </div>
+            <div class="detail-item">
+                <span class="label">Barkod:</span>
+                <span class="value">${product.barkod}</span>
+            </div>
+        </div>
+        <p class="product-description mt-3">${product.aciklama || ''}</p>
+        <div class="order-section mt-4">
+            <div class="price-tag mb-3">
+                <span class="price">${product.fiyat}</span>
+                <span class="currency">${product.para_birimi}</span>
+            </div>
+            <div class="quantity-input mb-3">
+                <label for="quantity" class="form-label">Sipariş Miktarı:</label>
+                <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('decrease')">-</button>
+                    <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="${product.stok}">
+                    <button class="btn btn-outline-secondary" type="button" onclick="updateQuantity('increase')">+</button>
+                </div>
+                <small class="text-muted">Maksimum sipariş: ${product.stok} ${product.birim}</small>
+            </div>
+        </div>
     `;
 
     // WhatsApp butonunu güncelle
     const whatsappBtn = document.getElementById('whatsappButton');
-    const message = encodeURIComponent(`Merhaba, ${product.ad} (Ürün Kodu: ${product.kod}) ürünü hakkında bilgi almak istiyorum.`);
-    whatsappBtn.href = `https://wa.me/905XXXXXXXXX?text=${message}`;
+    whatsappBtn.onclick = function() {
+        const quantity = document.getElementById('quantity').value;
+        const message = encodeURIComponent(
+            `Merhaba, ${product.ad} (Ürün Kodu: ${product.kod}) ürününden ${quantity} ${product.birim} sipariş vermek istiyorum.`
+        );
+        window.open(`https://wa.me/905XXXXXXXXX?text=${message}`, '_blank');
+    };
 
     modal.show();
+}
+
+// Miktar güncelleme fonksiyonu
+function updateQuantity(action) {
+    const input = document.getElementById('quantity');
+    let value = parseInt(input.value);
+    const max = parseInt(input.max);
+    
+    if (action === 'increase' && value < max) {
+        input.value = value + 1;
+    } else if (action === 'decrease' && value > 1) {
+        input.value = value - 1;
+    }
 }
 
 // Arama fonksiyonu
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     const filteredProducts = products.filter(product => 
-        product.ad.toLowerCase().includes(searchTerm) || 
-        product.marka.toLowerCase().includes(searchTerm) ||
-        product.kod.toLowerCase().includes(searchTerm)
+        (currentBrand === 'all' || product.marka === currentBrand) &&
+        (product.ad.toLowerCase().includes(searchTerm) || 
+         product.marka.toLowerCase().includes(searchTerm) ||
+         product.kod.toLowerCase().includes(searchTerm))
     );
     displayProducts(filteredProducts);
 }); 
