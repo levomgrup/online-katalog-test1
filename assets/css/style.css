@@ -1,0 +1,64 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-card {
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .card-text {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+#searchInput {
+    min-width: 300px;
+}
+
+.modal-content {
+    border-radius: 15px;
+}
+
+#whatsappButton {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1rem;
+}
+
+#whatsappButton i {
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    #searchInput {
+        min-width: 100%;
+        margin: 10px 0;
+    }
+    
+    .product-card .card-img-top {
+        height: 150px;
+    }
+} 
