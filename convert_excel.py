@@ -9,32 +9,22 @@ def convert_excel_to_json():
     # NaN değerleri temizle
     df = df.fillna('')
     
-    # Sütun isimlerini düzelt
-    df.columns = df.columns.str.strip().str.lower()
-    
     # JSON için ürün listesi oluştur
     products = []
-    for index, row in df.iterrows():
-        if row['aktif mi ?'] != 'Hayır':  # Sadece aktif ürünleri al
-            # Fiyat dönüşümü
-            try:
-                price = float(str(row['satış fiyatı']).replace(',', '.')) if row['satış fiyatı'] != '' else 0
-            except (ValueError, TypeError):
-                price = 0
-                
+    for _, row in df.iterrows():
+        if row['Aktif mi ?'] == 'TRUE':  # Sadece aktif ürünleri al
             product = {
-                'id': str(index + 1),
-                'code': str(row['kart kodu']),
-                'name': str(row['adı']),
-                'brand': str(row['marka']),
-                'stock': str(row['eldeki stok']),
-                'unit': str(row['birim']),
-                'price': price,
-                'currency': str(row['döviz cinsi']),
-                'barcode': str(row['barkod']),
-                'description': str(row['açıklama']),
-                'image': str(row['görsel']),
-                'category': str(row['stok grup'])
+                'kod': row['Kart kodu'],
+                'ad': row['Adı'],
+                'marka': row['Marka'],
+                'stok': row['Eldeki stok'],
+                'birim': row['Birim'],
+                'fiyat': row['Satış fiyatı'],
+                'para_birimi': row['Döviz cinsi'],
+                'barkod': row['Barkod'],
+                'aciklama': row['açıklama'],
+                'gorsel': row['görsel'],
+                'kategori': row['Stok grup']
             }
             products.append(product)
     

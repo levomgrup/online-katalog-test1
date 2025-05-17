@@ -18,16 +18,14 @@ function displayProducts(productsToShow) {
         const card = document.createElement('div');
         card.className = 'col-md-4 col-lg-3';
         card.innerHTML = `
-            <div class="card product-card" onclick="showProductDetails('${product.id}')">
-                <img src="${product.image}" class="card-img-top" alt="${product.name}" onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
+            <div class="card product-card" onclick="showProductDetails('${product.kod}')">
+                <img src="${product.gorsel}" class="card-img-top" alt="${product.ad}" onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
                 <div class="card-body">
-                    <h5 class="card-title">${product.name}</h5>
-                    <p class="card-text text-muted">${product.brand || ''}</p>
-                    <p class="card-text small">${product.description || ''}</p>
-                    <div class="d-flex justify-content-between align-items-center">
-                        <strong class="text-primary">${product.price} ${product.currency}</strong>
-                        <span class="badge bg-secondary">${product.stock} ${product.unit}</span>
-                    </div>
+                    <h5 class="card-title">${product.ad}</h5>
+                    <p class="card-text">${product.marka}</p>
+                    <p class="card-text">
+                        <strong>Fiyat: ${product.fiyat} ${product.para_birimi}</strong>
+                    </p>
                 </div>
             </div>
         `;
@@ -36,34 +34,32 @@ function displayProducts(productsToShow) {
 }
 
 // Ürün detaylarını göster
-function showProductDetails(productId) {
-    const product = products.find(p => p.id === productId);
+function showProductDetails(urunKodu) {
+    const product = products.find(p => p.kod === urunKodu);
     if (!product) return;
 
     const modal = new bootstrap.Modal(document.getElementById('productModal'));
-    document.querySelector('#productModal .modal-title').textContent = product.name;
-    document.getElementById('modalImage').src = product.image;
+    document.querySelector('#productModal .modal-title').textContent = product.ad;
+    document.getElementById('modalImage').src = product.gorsel;
     document.getElementById('modalImage').onerror = function() {
         this.src = 'https://via.placeholder.com/300x200?text=Ürün+Görseli';
     };
     
     const details = document.getElementById('modalDetails');
     details.innerHTML = `
-        <h4 class="mb-3">${product.name}</h4>
-        <p class="text-muted">Marka: ${product.brand || '-'}</p>
-        <p class="text-muted">Kategori: ${product.category || '-'}</p>
-        <p class="text-muted">Stok: ${product.stock} ${product.unit}</p>
-        <p>${product.description || ''}</p>
-        <p class="h4 mb-3">Fiyat: ${product.price} ${product.currency}</p>
-        <div class="small text-muted mb-3">
-            Ürün Kodu: ${product.code}<br>
-            Barkod: ${product.barcode}
-        </div>
+        <h4>${product.ad}</h4>
+        <p>Marka: ${product.marka}</p>
+        <p>Kategori: ${product.kategori}</p>
+        <p>Stok: ${product.stok} ${product.birim}</p>
+        <p>${product.aciklama || ''}</p>
+        <p class="h4">Fiyat: ${product.fiyat} ${product.para_birimi}</p>
+        <p>Ürün Kodu: ${product.kod}</p>
+        <p>Barkod: ${product.barkod}</p>
     `;
 
     // WhatsApp butonunu güncelle
     const whatsappBtn = document.getElementById('whatsappButton');
-    const message = encodeURIComponent(`Merhaba, ${product.name} (Ürün Kodu: ${product.code}) ürünü hakkında bilgi almak istiyorum.`);
+    const message = encodeURIComponent(`Merhaba, ${product.ad} (Ürün Kodu: ${product.kod}) ürünü hakkında bilgi almak istiyorum.`);
     whatsappBtn.href = `https://wa.me/905XXXXXXXXX?text=${message}`;
 
     modal.show();
@@ -73,11 +69,9 @@ function showProductDetails(productId) {
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
     const filteredProducts = products.filter(product => 
-        product.name.toLowerCase().includes(searchTerm) || 
-        product.description.toLowerCase().includes(searchTerm) ||
-        product.brand.toLowerCase().includes(searchTerm) ||
-        product.code.toLowerCase().includes(searchTerm) ||
-        product.barcode.toLowerCase().includes(searchTerm)
+        product.ad.toLowerCase().includes(searchTerm) || 
+        product.marka.toLowerCase().includes(searchTerm) ||
+        product.kod.toLowerCase().includes(searchTerm)
     );
     displayProducts(filteredProducts);
 }); 
