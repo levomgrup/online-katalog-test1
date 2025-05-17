@@ -94,7 +94,7 @@ function sendCollectedOrders() {
         message += `  Miktar: ${order.quantity} ${order.product.birim}\n\n`;
     });
 
-    window.open(`https://wa.me/905XXXXXXXXX?text=${encodeURIComponent(message)}`, '_blank');
+    window.open(`https://wa.me/905393082719?text=${encodeURIComponent(message)}`, '_blank');
     
     // Sepeti temizle
     orderBasket.clear();
