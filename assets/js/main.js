@@ -39,10 +39,9 @@ function filterByBrand(brand) {
         }
     });
     
-    const filteredProducts = brand === 'all' 
-        ? products 
-        : products.filter(p => p.marka === brand);
-    displayProducts(filteredProducts);
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    const benefitSearchTerm = document.getElementById('benefitSearchInput').value.toLowerCase();
+    filterProducts(searchTerm, benefitSearchTerm);
 }
 
 // Sipariş butonunu oluştur
@@ -51,7 +50,7 @@ function setupOrderButton() {
     orderButton.className = 'fixed-order-button d-none';
     orderButton.innerHTML = `
         <button class="btn btn-success btn-lg" onclick="sendCollectedOrders()">
-            <i class="fab fa-whatsapp"></i> Siparişi Tamamla
+            <i class="fab fa-whatsapp"></i> Siparişi Onayla
             <span class="order-count badge bg-light text-success ms-2">0</span>
         </button>
     `;
@@ -203,6 +202,20 @@ function displayProducts(productsToShow) {
                             <p class="card-text mb-2">
                                 <strong class="text-primary h5">${formatPrice(product.fiyat)} ₺</strong>
                             </p>
+                            <div class="quantity-input mb-2">
+                                <div class="input-group input-group-sm">
+                                    <button class="btn btn-outline-secondary" type="button" 
+                                            onclick="updateCardQuantity('${product.kod}', 'decrease')">-</button>
+                                    <input type="number" class="form-control text-center" 
+                                           id="quantity-${product.kod}"
+                                           value="0" min="0"
+                                           onfocus="handleQuantityFocus(this)"
+                                           oninput="validateQuantityInput(this)"
+                                           onchange="updateOrderBasket('${product.kod}', this.value)">
+                                    <button class="btn btn-outline-secondary" type="button"
+                                            onclick="updateCardQuantity('${product.kod}', 'increase')">+</button>
+                                </div>
+                            </div>
                             <button class="btn btn-outline-primary w-100" 
                                     onclick="showProductDetails('${product.kod}')">
                                 <i class="fas fa-info-circle me-2"></i>Ürün Detayı
@@ -323,7 +336,7 @@ function showProductDetails(urunKodu) {
                             <i class="fas fa-minus"></i>
                         </button>
                         <input type="number" class="form-control text-center" 
-                               id="modalQuantity" value="1" min="1" 
+                               id="modalQuantity" value="0" min="0" 
                                max="${product.stok}"
                                onchange="validateModalQuantity(this)">
                         <button class="btn btn-outline-secondary" type="button" 
@@ -351,7 +364,7 @@ function updateModalQuantity(action) {
     
     if (action === 'increase' && value < max) {
         input.value = value + 1;
-    } else if (action === 'decrease' && value > 1) {
+    } else if (action === 'decrease' && value > 0) {
         input.value = value - 1;
     }
     
@@ -363,21 +376,62 @@ function validateModalQuantity(input) {
     let value = parseInt(input.value);
     const max = parseInt(input.max);
     
-    if (isNaN(value) || value < 1) {
-        input.value = 1;
+    if (isNaN(value) || value < 0) {
+        input.value = 0;
     } else if (value > max) {
         input.value = max;
+    }
+
+    // Kart üzerindeki miktarı da güncelle
+    const productCode = input.closest('.modal').querySelector('.modal-title').textContent;
+    const product = products.find(p => p.ad === productCode);
+    if (product) {
+        const cardQuantity = document.getElementById(`quantity-${product.kod}`);
+        if (cardQuantity) {
+            cardQuantity.value = value;
+            updateOrderBasket(product.kod, value);
+        }
     }
 }
 
 // Arama fonksiyonu
 document.getElementById('searchInput').addEventListener('input', (e) => {
     const searchTerm = e.target.value.toLowerCase();
-    const filteredProducts = products.filter(product => 
-        (currentBrand === 'all' || product.marka === currentBrand) &&
-        (product.ad.toLowerCase().includes(searchTerm) || 
-         product.marka.toLowerCase().includes(searchTerm) ||
-         product.kod.toLowerCase().includes(searchTerm))
-    );
+    const benefitSearchTerm = document.getElementById('benefitSearchInput').value.toLowerCase();
+    filterProducts(searchTerm, benefitSearchTerm);
+});
+
+document.getElementById('benefitSearchInput').addEventListener('input', (e) => {
+    const benefitSearchTerm = e.target.value.toLowerCase();
+    const searchTerm = document.getElementById('searchInput').value.toLowerCase();
+    filterProducts(searchTerm, benefitSearchTerm);
+});
+
+// Ürünleri filtrele
+function filterProducts(searchTerm, benefitSearchTerm) {
+    const filteredProducts = products.filter(product => {
+        const matchesSearch = (currentBrand === 'all' || product.marka === currentBrand) &&
+            (product.ad.toLowerCase().includes(searchTerm) || 
+             product.marka.toLowerCase().includes(searchTerm) ||
+             product.kod.toLowerCase().includes(searchTerm));
+
+        const matchesBenefit = !benefitSearchTerm || 
+            (product.aciklama && product.aciklama.toLowerCase().includes(benefitSearchTerm));
+
+        return matchesSearch && matchesBenefit;
+    });
+
+    // Sonuç sayısını göster
+    const resultCount = document.createElement('div');
+    resultCount.className = 'search-result-count';
+    resultCount.textContent = `${filteredProducts.length} ürün bulundu`;
+    
+    const container = document.getElementById('productContainer');
+    const existingCount = container.querySelector('.search-result-count');
+    if (existingCount) {
+        existingCount.remove();
+    }
+    container.insertBefore(resultCount, container.firstChild);
+
     displayProducts(filteredProducts);
-}); 
+} 
