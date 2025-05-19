@@ -166,6 +166,25 @@ function displayProducts(productsToShow) {
                 .replace(/>/g, '&gt;')
                 .replace(/"/g, '&quot;')
                 .replace(/'/g, '&#039;');
+
+            // Açıklama kontrolü
+            let description = '';
+            try {
+                if (product.aciklama && product.aciklama.trim() !== '') {
+                    description = product.aciklama
+                        .replace(/&/g, '&amp;')
+                        .replace(/</g, '&lt;')
+                        .replace(/>/g, '&gt;')
+                        .replace(/"/g, '&quot;')
+                        .replace(/'/g, '&#039;');
+                } else {
+                    console.warn(`Ürün açıklaması bulunamadı: ${product.kod} - ${product.ad}`);
+                    description = 'Ürün açıklaması bulunmamaktadır.';
+                }
+            } catch (error) {
+                console.error(`Ürün açıklaması işlenirken hata oluştu: ${product.kod} - ${product.ad}`, error);
+                description = 'Ürün açıklaması yüklenirken bir hata oluştu.';
+            }
             
             productCol.innerHTML = `
                 <div class="card product-card h-100 shadow-sm ${isNewProduct ? 'new-product' : ''}">
@@ -173,36 +192,20 @@ function displayProducts(productsToShow) {
                     <div class="card-img-wrapper">
                         <img src="images/${product.gorsel}" class="card-img-top" alt="${escapedTitle}" 
                              onerror="this.src='https://via.placeholder.com/300x200?text=Ürün+Görseli'">
-                    </div>
-                    <div class="card-body d-flex flex-column">
-                        <div class="brand-badge mb-2">
+                        <div class="brand-badge">
                             <span class="badge bg-secondary">${product.marka}</span>
                         </div>
+                    </div>
+                    <div class="card-body">
                         <h5 class="card-title" data-tooltip="${escapedTitle}">${escapedTitle}</h5>
-                        <p class="card-text">
-                            <small class="text-muted">Stok: ${product.stok} ${product.birim}</small>
-                            ${stockWarning}
-                        </p>
+                        <p class="card-description">${description}</p>
                         <div class="mt-auto">
                             <p class="card-text mb-2">
                                 <strong class="text-primary h5">${formatPrice(product.fiyat)} ₺</strong>
                             </p>
-                            <div class="quantity-input mb-2">
-                                <div class="input-group input-group-sm">
-                                    <button class="btn btn-outline-secondary" type="button" 
-                                            onclick="updateCardQuantity('${product.kod}', 'decrease')">-</button>
-                                    <input type="number" class="form-control text-center" 
-                                           id="quantity-${product.kod}" value="0" min="0"
-                                           onfocus="handleQuantityFocus(this)"
-                                           oninput="validateQuantityInput(this)"
-                                           onchange="updateOrderBasket('${product.kod}', this.value)">
-                                    <button class="btn btn-outline-secondary" type="button"
-                                            onclick="updateCardQuantity('${product.kod}', 'increase')">+</button>
-                                </div>
-                            </div>
-                            <button class="btn btn-outline-primary btn-sm w-100" 
+                            <button class="btn btn-outline-primary w-100" 
                                     onclick="showProductDetails('${product.kod}')">
-                                <i class="fas fa-info-circle"></i> Ürün Detayı
+                                <i class="fas fa-info-circle me-2"></i>Ürün Detayı
                             </button>
                         </div>
                     </div>
