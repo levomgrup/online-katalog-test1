@@ -273,125 +273,109 @@ function updateCardQuantity(productCode, action) {
 }
 
 // Ürün detaylarını göster
-function showProductDetails(urunKodu) {
-    const product = products.find(p => p.kod === urunKodu);
+function showProductDetails(productCode) {
+    const product = products.find(p => p.kod === productCode);
     if (!product) return;
 
     const modal = new bootstrap.Modal(document.getElementById('productModal'));
-    document.querySelector('#productModal .modal-title').textContent = product.ad;
-    
-    // Görsel kısmını güncelle
+    const modalTitle = document.querySelector('#productModal .modal-title');
     const modalImage = document.getElementById('modalImage');
+    const modalDetails = document.getElementById('modalDetails');
+
+    // Başlık ve görsel
+    modalTitle.textContent = product.urun;
     modalImage.src = `images/${product.gorsel}`;
-    modalImage.alt = product.ad;
-    modalImage.onerror = function() {
-        this.src = 'https://via.placeholder.com/400x400?text=Ürün+Görseli';
-    };
-    
-    const details = document.getElementById('modalDetails');
-    details.innerHTML = `
+    modalImage.alt = product.urun;
+
+    // Detaylar
+    const details = `
         <div class="product-info">
-            <h4 class="product-title mb-3">${product.ad}</h4>
             <div class="product-details">
                 <div class="detail-item">
                     <span class="label">Marka:</span>
-                    <span class="value">${product.marka || '-'}</span>
-                </div>
-                <div class="detail-item">
-                    <span class="label">Kategori:</span>
-                    <span class="value">${product.kategori || '-'}</span>
-                </div>
-                <div class="detail-item">
-                    <span class="label">Stok:</span>
-                    <span class="value">${product.stok} ${product.birim}</span>
+                    <span class="value">${product.marka}</span>
                 </div>
                 <div class="detail-item">
                     <span class="label">Ürün Kodu:</span>
                     <span class="value">${product.kod}</span>
                 </div>
                 <div class="detail-item">
-                    <span class="label">Barkod:</span>
-                    <span class="value">${product.barkod}</span>
+                    <span class="label">Fiyat:</span>
+                    <span class="value text-primary h5 mb-0">${formatPrice(product.fiyat)} ₺</span>
                 </div>
             </div>
             
-            ${product.aciklama ? `
-                <div class="product-description mt-3">
-                    <h5 class="description-title">Ürün Açıklaması</h5>
-                    <p>${product.aciklama}</p>
-                </div>
-            ` : ''}
+            <div class="product-description mt-4">
+                <h6 class="description-title">Ürün Açıklaması</h6>
+                <p>${product.aciklama || 'Ürün açıklaması bulunmamaktadır.'}</p>
+            </div>
 
-            <div class="order-section mt-4">
-                <div class="price-tag mb-3">
-                    <span class="price">${formatPrice(product.fiyat)}</span>
-                    <span class="currency">₺</span>
+            <div class="quantity-control mt-4">
+                <div class="input-group">
+                    <button class="btn btn-outline-secondary" type="button" onclick="updateModalQuantity('decrease')">-</button>
+                    <input type="number" class="form-control text-center" id="modalQuantity" value="1" min="1"
+                           oninput="validateModalQuantity(this)"
+                           onchange="updateOrderBasket('${product.kod}', this.value)"
+                           onfocus="this.select()">
+                    <button class="btn btn-outline-secondary" type="button" onclick="updateModalQuantity('increase')">+</button>
                 </div>
-                
-                <div class="quantity-control">
-                    <label for="modalQuantity" class="form-label">Sipariş Miktarı:</label>
-                    <div class="input-group">
-                        <button class="btn btn-outline-secondary" type="button" 
-                                onclick="updateModalQuantity('decrease')">
-                            <i class="fas fa-minus"></i>
-                        </button>
-                        <input type="number" class="form-control text-center" 
-                               id="modalQuantity" value="0" min="0" 
-                               max="${product.stok}"
-                               onchange="validateModalQuantity(this)">
-                        <button class="btn btn-outline-secondary" type="button" 
-                                onclick="updateModalQuantity('increase')">
-                            <i class="fas fa-plus"></i>
-                        </button>
-                    </div>
-                    ${parseInt(product.stok) === 0 ? 
-                        '<div class="stock-warning mt-2">Stok sıfır ürünlerin tedarik süreci 2 haftaya kadar çıkabilmektedir</div>' :
-                        `<small class="text-muted mt-2 d-block">Maksimum sipariş: ${product.stok} ${product.birim}</small>`
-                    }
-                </div>
+                <button class="btn btn-success mt-3" onclick="addToOrderFromModal('${product.kod}')">
+                    <i class="fab fa-whatsapp me-2"></i>Sipariş Ver
+                </button>
             </div>
         </div>
     `;
 
+    modalDetails.innerHTML = details;
     modal.show();
 }
 
-// Modal içindeki miktar kontrolü
-function updateModalQuantity(action) {
-    const input = document.getElementById('modalQuantity');
-    let value = parseInt(input.value);
-    const max = parseInt(input.max);
-    
-    if (action === 'increase' && value < max) {
-        input.value = value + 1;
-    } else if (action === 'decrease' && value > 0) {
-        input.value = value - 1;
+function validateModalQuantity(input) {
+    let value = parseInt(input.value) || 0;
+    if (value < 1) {
+        value = 1;
     }
-    
-    validateModalQuantity(input);
+    input.value = value;
+    const productCode = input.closest('.product-info').querySelector('.detail-item:nth-child(2) .value').textContent;
+    updateOrderBasket(productCode, value);
 }
 
-// Modal miktar doğrulama
-function validateModalQuantity(input) {
-    let value = parseInt(input.value);
-    const max = parseInt(input.max);
-    
-    if (isNaN(value) || value < 0) {
-        input.value = 0;
-    } else if (value > max) {
-        input.value = max;
+function updateModalQuantity(action) {
+    const input = document.getElementById('modalQuantity');
+    let value = parseInt(input.value) || 0;
+
+    if (action === 'increase') {
+        value++;
+    } else if (action === 'decrease') {
+        value = Math.max(1, value - 1);
     }
 
-    // Kart üzerindeki miktarı da güncelle
-    const productCode = input.closest('.modal').querySelector('.modal-title').textContent;
-    const product = products.find(p => p.ad === productCode);
-    if (product) {
-        const cardQuantity = document.getElementById(`quantity-${product.kod}`);
-        if (cardQuantity) {
-            cardQuantity.value = value;
-            updateOrderBasket(product.kod, value);
-        }
+    input.value = value;
+    const productCode = input.closest('.product-info').querySelector('.detail-item:nth-child(2) .value').textContent;
+    updateOrderBasket(productCode, value);
+}
+
+function addToOrderFromModal(productCode) {
+    const quantity = parseInt(document.getElementById('modalQuantity').value) || 0;
+    if (quantity > 0) {
+        updateOrderBasket(productCode, quantity);
+        const modal = bootstrap.Modal.getInstance(document.getElementById('productModal'));
+        modal.hide();
     }
+}
+
+// Miktar girişi validasyonu
+function validateQuantityInput(input) {
+    let value = parseInt(input.value) || 0;
+    if (value < 0) {
+        value = 0;
+    }
+    input.value = value;
+}
+
+// Miktar girişi odaklandığında
+function handleQuantityFocus(input) {
+    input.select();
 }
 
 // Arama fonksiyonu
