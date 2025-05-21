@@ -84,7 +84,6 @@
                         <div class="col-12 mb-4">
                             <h3 class="text-center mb-3">Çalıştığımız Markalar</h3>
                             <div class="brand-logos d-flex flex-wrap justify-content-center align-items-center gap-4">
-                                <img src="images/logolar/levom-logo.png" alt="Levom Logo" class="brand-logo">
                                 <img src="images/logolar/vegeats-logo.png" alt="Vegeats Logo" class="brand-logo">
                                 <img src="images/logolar/ralila-logo-1.png" alt="Ralila Logo" class="brand-logo">
                                 <img src="images/logolar/pekmezciamca-logo.png" alt="Pekmezciamca Logo" class="brand-logo">
@@ -121,15 +120,6 @@
                                             <div class="certificate-images d-flex flex-wrap justify-content-center gap-3">
                                                 <img src="images/sertifikalar/apimaya/blog-1.jpg" 
                                                      alt="Apimaya Sertifikası 1" 
-                                                     class="certificate-img">
-                                                <img src="images/sertifikalar/apimaya/blog-2.png" 
-                                                     alt="Apimaya Sertifikası 2" 
-                                                     class="certificate-img">
-                                                <img src="images/sertifikalar/apimaya/theme_banner_image_1.png" 
-                                                     alt="Apimaya Sertifikası 3" 
-                                                     class="certificate-img">
-                                                <img src="images/sertifikalar/apimaya/entry_slider_image_3.jpg" 
-                                                     alt="Apimaya Sertifikası 4" 
                                                      class="certificate-img">
                                             </div>
                                         </div>
@@ -178,29 +168,29 @@
     </div>
 
     <!-- Ürün Detay Modalı -->
-    <div class="modal fade" id="productModal" tabindex="-1">
+    <div class="modal fade" id="productDetailModal" tabindex="-1" aria-labelledby="productDetailModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title"></h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <img src="" class="img-fluid rounded" id="modalImage">
-                        </div>
-                        <div class="col-md-6">
-                            <div id="modalDetails"></div>
-                        </div>
-                    </div>
-                </div>
+                <!-- Modal içeriği JavaScript ile doldurulacak -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Sepet Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="cartOffcanvasLabel">Sepetim</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div id="cartContent">
+                <!-- Sepet içeriği JavaScript ile doldurulacak -->
             </div>
         </div>
     </div>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
